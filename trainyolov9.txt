@@ -1,0 +1,3 @@
+python train_dual.py --workers 2 --device 0 --batch 3 --data data/drug_2k_classes.yaml --img 640 --cfg models/detect/yolov9-c.yaml --weights '' --name drug2k --hyp hyp.scratch-high.yaml --min-items 0 --epochs 500 --close-mosaic 15
+
+python train_dual.py --workers 2 --device 0 --batch 5 --data data/drug_2k_classes.yaml --img 640 --cfg models/detect/yolov9-c.yaml --weights '' --name drug2k --hyp hyp.scratch-high.yaml --min-items 0 --epochs 500 --close-mosaic 15 --resume
